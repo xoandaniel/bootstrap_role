@@ -1,0 +1,9 @@
+---
+# tasks file for bootstrap
+- name: Check system load
+  checkload:
+  register: load
+- name: Show system load
+  debug:
+     msg: "{{load}}"
+
